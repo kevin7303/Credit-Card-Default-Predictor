@@ -73,7 +73,7 @@ Below are some of the graphs created with seaborn:
 ## Model Building 
 I wanted to create a model that accurately classify real accounts that would default based on their previous payments
 
-*Evaluation Metric*
+**Evaluation Metric**
 
 The specific metric used to evaluate the model was Accuracy with attention to precision, recall and F1 score.
 
