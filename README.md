@@ -133,7 +133,7 @@ Tuning was done on all of the functions above to increase prediction accuracy.
 The other tuned models resulted in:
 
 XGB Classifer:
-*Test data accuracy: 0.80761
+* Test data accuracy: 0.80761
 
 Neural Networks 
-*loss: 0.6938 - accuracy: 0.5571 - val_loss: 0.5809 - val_accuracy: 0.7825
+* loss: 0.6938 - accuracy: 0.5571 - val_loss: 0.5809 - val_accuracy: 0.7825
