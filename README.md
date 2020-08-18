@@ -15,37 +15,37 @@ Machine Learning/ Deep Learning model to predict bank accounts that default
 **Original Kaggle Dataset:** https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
 ## Data Overview
-Data contains 30,000 rows and 25 columns:
-Columns (features) are:
-ID: ID of each client
-LIMIT_BAL: Amount of given credit in NT dollars 
-SEX: Gender
-EDUCATION
-MARRIAGE: Marital status 
-AGE: Age in years
-PAY_0: Repayment status in September, 2005
-PAY_2: Repayment status in August, 2005 
-PAY_3: Repayment status in July, 2005 
-PAY_4: Repayment status in June, 2005
-PAY_5: Repayment status in May, 2005 
-PAY_6: Repayment status in April, 2005 
-BILL_AMT1: Amount of bill statement in September, 2005 
-BILL_AMT2: Amount of bill statement in August, 2005 
-BILL_AMT3: Amount of bill statement in July, 2005 
-BILL_AMT4: Amount of bill statement in June, 2005 
-BILL_AMT5: Amount of bill statement in May, 2005 
-BILL_AMT6: Amount of bill statement in April, 2005 
-PAY_AMT1: Amount of previous payment in September, 2005
-PAY_AMT2: Amount of previous payment in August, 2005 
-PAY_AMT3: Amount of previous payment in July, 2005 
-PAY_AMT4: Amount of previous payment in June, 2005 
-PAY_AMT5: Amount of previous payment in May, 2005
-PAY_AMT6: Amount of previous payment in April, 2005 
-default.payment.next.month: Default payment 
+*Data contains 30,000 rows and 25 columns:
+*Columns (features) are:
+*ID: ID of each client
+*LIMIT_BAL: Amount of given credit in NT dollars 
+*SEX: Gender
+*EDUCATION
+*MARRIAGE: Marital status 
+*AGE: Age in years
+*PAY_0: Repayment status in September, 2005
+*PAY_2: Repayment status in August, 2005 
+*PAY_3: Repayment status in July, 2005 
+*PAY_4: Repayment status in June, 2005
+*PAY_5: Repayment status in May, 2005 
+*PAY_6: Repayment status in April, 2005 
+*BILL_AMT1: Amount of bill statement in September, 2005 
+*BILL_AMT2: Amount of bill statement in August, 2005 
+*BILL_AMT3: Amount of bill statement in July, 2005 
+*BILL_AMT4: Amount of bill statement in June, 2005 
+*BILL_AMT5: Amount of bill statement in May, 2005 
+*BILL_AMT6: Amount of bill statement in April, 2005 
+*PAY_AMT1: Amount of previous payment in September, 2005
+*PAY_AMT2: Amount of previous payment in August, 2005 
+*PAY_AMT3: Amount of previous payment in July, 2005 
+*PAY_AMT4: Amount of previous payment in June, 2005 
+*PAY_AMT5: Amount of previous payment in May, 2005
+*PAY_AMT6: Amount of previous payment in April, 2005 
+*default.payment.next.month: Default payment 
 
 
 Target Variable: 
-defaukt.payment.next.month: Does the account default on Payment
+default.payment.next.month: Does the account default on Payment
 
 ## Data Cleaning
 I did extensive data cleaning in order to facilitate the exploratory analysis and the model building process:
@@ -112,22 +112,22 @@ Tuning was done on all of the functions above to increase prediction accuracy.
 
 * **Neural Network** -
 
-Input - input_dim = 66
-Hidden - Dense(16, activation = 'relu')
-Hidden - Dense(16, activation = 'relu')
-Dropout(0.5)
-Output -Dense(1, activation = 'sigmoid')
+* Input - input_dim = 66
+* Hidden - Dense(16, activation = 'relu')
+* Hidden - Dense(16, activation = 'relu')
+* Dropout(0.5)
+* Output -Dense(1, activation = 'sigmoid')
 
-Adam Optmizer (lr=1e-3)
+* Adam Optmizer (lr=1e-3)
 
-batch = 16
-epochs = 100
-earlystop = EarlyStopping(patience=30, restore_best_weights= True)
-callback = [earlystop]
+* batch = 16
+* epochs = 100
+* earlystop = EarlyStopping(patience=30, restore_best_weights= True)
+* callback = [earlystop]
 
-model.compile(loss='binary_crossentropy', optimizer= opt, metrics=['accuracy'])
+* model.compile(loss='binary_crossentropy', optimizer= opt, metrics=['accuracy'])
 
-**Results**
+## **Results**
 The best algorithm was Random Forest Classifier with test data accuracy: 0.81681
 
 The other tuned models resulted in:
