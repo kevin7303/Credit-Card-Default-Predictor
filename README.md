@@ -15,33 +15,33 @@ Machine Learning/ Deep Learning model to predict bank accounts that default
 **Original Kaggle Dataset:** https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
 ## Data Overview
-*Data contains 30,000 rows and 25 columns:
-*Columns (features) are:
-*ID: ID of each client
-*LIMIT_BAL: Amount of given credit in NT dollars 
-*SEX: Gender
-*EDUCATION
-*MARRIAGE: Marital status 
-*AGE: Age in years
-*PAY_0: Repayment status in September, 2005
-*PAY_2: Repayment status in August, 2005 
-*PAY_3: Repayment status in July, 2005 
-*PAY_4: Repayment status in June, 2005
-*PAY_5: Repayment status in May, 2005 
-*PAY_6: Repayment status in April, 2005 
-*BILL_AMT1: Amount of bill statement in September, 2005 
-*BILL_AMT2: Amount of bill statement in August, 2005 
-*BILL_AMT3: Amount of bill statement in July, 2005 
-*BILL_AMT4: Amount of bill statement in June, 2005 
-*BILL_AMT5: Amount of bill statement in May, 2005 
-*BILL_AMT6: Amount of bill statement in April, 2005 
-*PAY_AMT1: Amount of previous payment in September, 2005
-*PAY_AMT2: Amount of previous payment in August, 2005 
-*PAY_AMT3: Amount of previous payment in July, 2005 
-*PAY_AMT4: Amount of previous payment in June, 2005 
-*PAY_AMT5: Amount of previous payment in May, 2005
-*PAY_AMT6: Amount of previous payment in April, 2005 
-*default.payment.next.month: Default payment 
+* Data contains 30,000 rows and 25 columns:
+* Columns (features) are:
+* ID: ID of each client
+* LIMIT_BAL: Amount of given credit in NT dollars 
+* SEX: Gender
+* EDUCATION
+* MARRIAGE: Marital status 
+* AGE: Age in years
+* PAY_0: Repayment status in September, 2005
+* PAY_2: Repayment status in August, 2005 
+* PAY_3: Repayment status in July, 2005 
+* PAY_4: Repayment status in June, 2005
+* PAY_5: Repayment status in May, 2005 
+* PAY_6: Repayment status in April, 2005 
+* BILL_AMT1: Amount of bill statement in September, 2005 
+* BILL_AMT2: Amount of bill statement in August, 2005 
+* BILL_AMT3: Amount of bill statement in July, 2005 
+* BILL_AMT4: Amount of bill statement in June, 2005 
+* BILL_AMT5: Amount of bill statement in May, 2005 
+* BILL_AMT6: Amount of bill statement in April, 2005 
+* PAY_AMT1: Amount of previous payment in September, 2005
+* PAY_AMT2: Amount of previous payment in August, 2005 
+* PAY_AMT3: Amount of previous payment in July, 2005 
+* PAY_AMT4: Amount of previous payment in June, 2005 
+* PAY_AMT5: Amount of previous payment in May, 2005
+* PAY_AMT6: Amount of previous payment in April, 2005 
+* default.payment.next.month: Default payment 
 
 
 Target Variable: 
@@ -128,11 +128,12 @@ Tuning was done on all of the functions above to increase prediction accuracy.
 * model.compile(loss='binary_crossentropy', optimizer= opt, metrics=['accuracy'])
 
 ## **Results**
-The best algorithm was Random Forest Classifier with test data accuracy: 0.81681
+# The best algorithm was Random Forest Classifier with test data accuracy: 0.81681
 
 The other tuned models resulted in:
+
 XGB Classifer:
-Test data accuracy: 0.80761
+*Test data accuracy: 0.80761
 
 Neural Networks 
-loss: 0.6938 - accuracy: 0.5571 - val_loss: 0.5809 - val_accuracy: 0.7825
+*loss: 0.6938 - accuracy: 0.5571 - val_loss: 0.5809 - val_accuracy: 0.7825
